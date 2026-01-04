@@ -21,7 +21,7 @@ Make unreleased (hidden) products visible.
 Unreleased (hidden) products become visible. [web:78]
 
 ## Why it works
-The application runs a SQL query similar to: `SELECT * FROM products WHERE category = 'Gifts' AND released = 1`. [web:78]  
+The application runs a SQL query similar to: `SELECT * FROM products WHERE category = `Accessories` AND released = 1`. [web:78]  
 The `'` closes the string, `OR 1=1` adds an always-true condition, and `--` comments out the rest of the original query (such as `AND released = 1`), so the filter returns unreleased products too. [web:78][web:82][web:126]  
 In some databases (for example MySQL), `--` must be followed by a space to be treated as a comment. [web:126]
 
