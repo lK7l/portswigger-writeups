@@ -22,4 +22,4 @@ The payload `administrator'--` closes the string after `administrator` and then 
 
 ## Fix
 - Use prepared statements / parameterized queries so user input is treated as data, not executable SQL.
-- Apply strict allow-list validation for usernames (as an extra defense-in-depth measure). [web:207]
+- Apply strict allow-list validation for usernames (as an extra defense-in-depth measure).
